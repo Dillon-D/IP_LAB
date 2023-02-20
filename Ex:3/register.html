@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title> 
+    <script>
+        function validate() {
+            var e = document.forms["f"]["eid"].value;
+            var na = document.forms["f"]["id"].value;
+            var d = document.forms["f"]["date"].value;
+            var pn = document.forms["f"]["p"].value;
+            var g = document.forms["f"]["Gender"].value;
+            var p = document.forms["f"]["pd"].value;
+            var p1 = document.forms["f"]["pd1"].value;
+            if (na == ""){
+                alert("Enter the Username");
+                return false;
+            }
+
+            else if (e == ""){
+                alert("Enter email");
+                return false;
+            }   
+            else if (d == ""){
+                alert("Enter date of birth");
+                return false;
+            }    
+            else if (pn == ""){
+                alert("Enter the Phone Number");
+                return false;
+            }    
+            else if (g == ""){
+                alert("Enter the Gender");
+                return false;
+            } 
+            else if (p == ""){
+                alert("Enter the Password");
+                return false;
+            }
+            else if (p !== p1){
+                alert("Password is not same");
+                return false;
+            }
+        }
+    </script>
+    <style>
+        .center {
+            width: 400px; 
+            margin: auto; 
+            text-align: center;
+            padding: 10em;
+
+        }
+
+        tag {
+            font-family:'Times New Roman', Times, serif;color:white;
+        }
+        table {
+            font-family:'Times New Roman', Times, serif;color:purple;font-weight: bold;
+            border-spacing: 5pt;
+        }
+        .button:hover{
+            background-color: purple;
+            color: black;
+            cursor: pointer;
+            border-radius: 7pt;
+        }
+        
+    </style>
+</head>
+<body bgcolor="black">
+    <div class="center">
+        <h1 style="color: black;">
+            <tag><b>Register Your Details</b></tag><br>
+        </h1>
+            <form name="f">
+                <center>
+                <table class="table">
+                    <tr>
+                        <td>Username :</td>
+                        <td><input type="text" name="id"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Email id :</td>
+                        <td><input type="email" name="eid"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Date of birth :</td>
+                        <td><input type="date" name="date"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Phone No:</td>
+                        <td><input type="tel" name="p"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Gender:</td>
+                        <td><select name="Gender">
+                            <option value="">Select Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select></td>
+                    </tr>
+
+                    <tr>
+                        <td>New Password :</td>
+                        <td> <input type="password" name="pd"></td>
+                    </tr>
+                    <tr>
+                        <td>Verify Password :</td>
+                        <td><input type="password" name="pd1"></td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td><input type="submit" name="submit" onclick="validate()" class="button" formaction="ex3.html"></td>
+                        <td><input type="reset" class="button" style="margin-left: 70%;" ></td>
+                    </tr>
+
+                </table>
+            </center>
+            </form>
+    </div>
+</body>
+</html>
