@@ -53,7 +53,7 @@
         <h1 style="color: black">
             <b>Login</b><br>
         </h1>
-            <form name="f"><center>
+            <form name="f" onsubmit="return validate()"><center>
                 <table class="table" style="color:black; background-color: white; font-weight: bold;" >
                     <tr>
                         <td>Username :</td>
@@ -64,7 +64,7 @@
                         <td> <input type="password" name="pwd"></td>
                     </tr>
                     <tr>
-                        <td><input type="submit" onclick="validate()" class="button"></td>
+                        <td><input type="submit" class="button"></td>
                         <td><input type="reset" style="margin-left: 70%;" class="button"></td>
                     </tr>
                 </table>
