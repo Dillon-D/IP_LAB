@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Banking System</title>
+    <meta charset="UTF-8">
+	<style>
+        body{font-family:"Poppins";}
+        .container{
+            align-items: center;
+        }
+    </style>
+    <script src="trans.js"></script>
+</head>
+<body bgcolor="cyan">
+	<div class="container">
+        <center>
+		<h1>Welcome to SBI</h1>
+		<div class="account">
+			<h2>Account Balance: <span id="balance">0</span></h2>
+			<p>Deposit</p>
+			<p>Deposit Amount:</p>
+			<input type="number" id="deposit">
+			<button onclick="deposit()">Deposit</button><br>
+			<p>Withdraw</p>
+			<p>Withdraw Amount:</p>
+			<input type="number" id="withdraw">
+			<button onclick="return withdraw()">Withdraw</button><br>
+			<p>Bank Statement</p>
+    		<button onclick="return displayStatement()">Display Statement</button><br><br>
+    		<table id="statement-table"></table>
+		</div>
+	</div>
+	
+</center>
+</body>
+</html>
