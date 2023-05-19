@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+  <user id="1">
+    <name>Sasuke</name>
+    <aname>Naruto</aname>
+    <price>30,000</price>
+  </user>
+  <user id="2">
+    <name>Zoro</name>
+    <aname>One Piece</aname>
+    <price>25,000</price>
+  </user>
+  <user id="3">
+    <name>Tanjiro Kamado</name>
+    <aname>Demon Slayer</aname>
+    <price>21,000</price>
+  </user>
+  <user id="4">
+    <name>Eren Yeager</name>
+    <aname>Attack On Titans</aname>
+    <price>10,000</price>
+  </user>
+  </users>
